@@ -1,30 +1,12 @@
-<!DOCTYPE html>
-<html>
-<header>
+@extends('layouts.general')
 
-</header>
-<body>
-    <table>
-        <thead>
-        <tr>
-            <th>id</th>
-            <th>Descripcion</th>
-            <th>Precio</th>
-            <th>Cantidad</th>
-            <th>Imagen</th>
-        </tr>
-        </thead>
-        <tbody>
-            @foreach ($productos as $producto)
-            <tr>
-                <td>{{$producto->id}}</td>
-                <td>{{$producto->descripcion}}</td>
-                <td>{{$producto->precio}}</td>
-                <td>{{$producto->cantidad}}</td>
-                <td><img src="{{$producto->foto}}"></td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
-</body>
-</html>
+@section('title', 'Tienda en Linea')
+
+@section("encabezado")
+    <h1>TIENDA EN LINEA</h1>
+    <h2>PRODUCTOS DESTACADOS</h2>
+@endsection
+
+@section('contenido')
+    @include('components.tarjetaProductos')
+@endsection

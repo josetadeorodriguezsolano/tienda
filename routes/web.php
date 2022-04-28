@@ -34,4 +34,11 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/productos/masvendidos',[ProductoController::class,'masVendidos']);
+
+Route::get('/principal',function(){
+    return view('layouts.general');
+});
+
+
 require __DIR__.'/auth.php';
