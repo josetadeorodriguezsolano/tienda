@@ -1,0 +1,7 @@
+var n=Object.defineProperty;var s=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var m=Object.prototype.hasOwnProperty;var c=(t,e)=>{for(var r in e)n(t,r,{get:e[r],enumerable:!0})},f=(t,e,r,o)=>{if(e&&typeof e=="object"||typeof e=="function")for(let a of h(e))!m.call(t,a)&&a!==r&&n(t,a,{get:()=>e[a],enumerable:!(o=s(e,a))||o.enumerable});return t};var k=t=>f(n({},"__esModule",{value:!0}),t);var g={};c(g,{Git:()=>i});module.exports=k(g);class i{constructor(e){this.faker=e;this.hexChars=["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];for(const r of Object.getOwnPropertyNames(i.prototype))r==="constructor"||typeof this[r]!="function"||(this[r]=this[r].bind(this))}branch(){const e=this.faker.hacker.noun().replace(" ","-"),r=this.faker.hacker.verb().replace(" ","-");return e+"-"+r}commitEntry(e={}){let r=`commit {{git.commitSha}}\r
+`;return(e.merge||this.faker.datatype.number({min:0,max:4})===0)&&(r+=`Merge: {{git.shortSha}} {{git.shortSha}}\r
+`),r+=`Author: {{name.firstName}} {{name.lastName}} <{{internet.email}}>\r
+`,r+="Date: "+this.faker.date.recent().toString()+`\r
+`,r+=`\r
+\xA0\xA0\xA0\xA0{{git.commitMessage}}\r
+`,this.faker.fake(r)}commitMessage(){const e="{{hacker.verb}} {{hacker.adjective}} {{hacker.noun}}";return this.faker.fake(e)}commitSha(){let e="";for(let r=0;r<40;r++)e+=this.faker.random.arrayElement(this.hexChars);return e}shortSha(){let e="";for(let r=0;r<7;r++)e+=this.faker.random.arrayElement(this.hexChars);return e}}0&&(module.exports={Git});

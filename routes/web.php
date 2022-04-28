@@ -36,4 +36,9 @@ Route::get('/dashboard', function () {
 
 Route::get('/productos/masvendidos',[ProductoController::class,'masVendidos']);
 
+Route::get('/principal',function(){
+    return view('layouts.general');
+});
+
+
 require __DIR__.'/auth.php';
