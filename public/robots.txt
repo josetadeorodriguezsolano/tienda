@@ -2,3 +2,4 @@ User-agent: *
 Disallow:
 
 Brandon Eliel Colmenero Heraldes
+tadeo

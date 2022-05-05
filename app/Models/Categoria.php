@@ -9,4 +9,5 @@ class Categoria extends Model
 {
     use HasFactory;
     public $timestamps = false;
+    public $x = 1;
 }

@@ -76,10 +76,14 @@ class ProductoController extends Controller
             }
             //$productos = Producto::find($id);
             //$producto->delete();
-            
+
         }
         return Producto::all();
     }
 
-
+    public function masVendidos()
+    {
+        $productos = Producto::masVendidos();
+        return view("catalogoProductos",["productos"=>$productos]);
+    }
 }
