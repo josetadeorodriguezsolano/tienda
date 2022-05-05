@@ -1,7 +1,7 @@
 User-agent: *
 Disallow:
-Jorge
 rigoberto
 EmilioMendoza9
 Josue
 Fernando Talavera
+Jorge
