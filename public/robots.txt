@@ -1,6 +1,6 @@
 User-agent: *
 Disallow:
-jorge
+Jorge
 rigoberto
 EmilioMendoza9
 Josue
