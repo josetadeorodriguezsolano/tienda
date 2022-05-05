@@ -21,5 +21,9 @@ class Producto extends Model
             $arregloids[] = $ids->producto_id;
         }
         return Producto::whereIn("id",$arregloids)->get();
+        $administradores = User::where('tipo','administrador')->get();
+        foreach ($administradores as $admin) {
+            $admin->enviarCorreo("Mensaje");
+        }
     }
 }

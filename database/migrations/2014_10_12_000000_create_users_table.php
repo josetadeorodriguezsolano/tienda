@@ -18,7 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('nombre');
             $table->string('direccion',1000)->nullable();
             $table->string('tarjeta_credito',16)->nullable();
-            $table->string('correo')->unique();
+            $table->string('email')->unique();
+            $table->enum('tipo',['cliente','administrador'])->default('cliente');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

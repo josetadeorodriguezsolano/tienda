@@ -7,9 +7,14 @@ use PhpParser\Node\Stmt\UseUse;
 use PHPUnit\Framework\TestCase;
 use App\Models\User;
 use App\Models\Carrito;
+//use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+
 
 class CarritoTest extends TestCase
 {
+    use DatabaseTransactions;
+    //use RefreshDatabase;
     /**
      * A basic unit test example.
      *
@@ -29,6 +34,7 @@ class CarritoTest extends TestCase
 
     public function test_producto()
     {
+        $producto = Producto::factory()->create();
         $this->assertTrue(true);
     }
 }

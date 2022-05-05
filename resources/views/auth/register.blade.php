@@ -14,16 +14,30 @@
 
             <!-- Name -->
             <div>
-                <x-label for="name" :value="__('Name')" />
+                <x-label for="nombre" :value="__('Nombre')" />
 
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
+                <x-input id="nombre" class="block mt-1 w-full" type="text" name="nombre" :value="old('nombre')" required autofocus />
             </div>
 
-            <!-- Email Address -->
+            <!-- correo Address -->
             <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
+                <x-label for="correo" :value="__('correo')" />
 
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+                <x-input id="correo" class="block mt-1 w-full" type="email" name="correo" :value="old('correo')" required />
+            </div>
+
+            <!-- correo Address -->
+            <div class="mt-4">
+                <x-label for="direccion" :value="__('direccion')" />
+
+                <x-input id="direccion" class="block mt-1 w-full" type="text" name="direccion" :value="old('direccion')" required />
+            </div>
+
+            <!-- correo Address -->
+            <div class="mt-4">
+                <x-label for="tarjeta_credito" :value="__('tarjeta_credito')" />
+
+                <x-input id="tarjeta_credito" class="block mt-1 w-full" type="text" name="tarjeta_credito" :value="old('tarjeta_credito')" required />
             </div>
 
             <!-- Password -->

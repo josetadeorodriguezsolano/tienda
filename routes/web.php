@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
+use App\Http\Middleware\validarAdministradorMiddleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,15 +21,18 @@ Route::get('/alta_de_productos',function(){
     return view("altaProducto");
 });
 
-Route::get('/catalogo_productos',function(){
-    return view("catalogoProductos");
+Route::middleware([validarAdministradorMiddleware::class])->group(function ()
+{
+    Route::get('/catalogo_productos',function(){
+        return view("catalogoProductos");
+    });
+
+    Route::get('/catalogo_productos/catalogo',[ProductoController::class,'catalogo']);
+
+    Route::get('/catalogo_productos/eliminar/{ids}',[ProductoController::class,'eliminar']);
+
+    Route::post('/alta_de_productos/insertar',[ProductoController::class, 'insertar']);
 });
-
-Route::get('/catalogo_productos/catalogo',[ProductoController::class,'catalogo']);
-
-Route::get('/catalogo_productos/eliminar/{ids}',[ProductoController::class,'eliminar']);
-
-Route::post('/alta_de_productos/insertar',[ProductoController::class, 'insertar']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
