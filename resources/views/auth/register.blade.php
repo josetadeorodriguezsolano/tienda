@@ -21,9 +21,9 @@
 
             <!-- correo Address -->
             <div class="mt-4">
-                <x-label for="correo" :value="__('correo')" />
+                <x-label for="email" :value="__('email')" />
 
-                <x-input id="correo" class="block mt-1 w-full" type="email" name="correo" :value="old('correo')" required />
+                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
 
             <!-- correo Address -->
