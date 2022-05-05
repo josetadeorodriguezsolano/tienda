@@ -2,3 +2,4 @@ User-agent: *
 Disallow:
 rigoberto
 EmilioMendoza9
+Josue
