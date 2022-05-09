@@ -7,6 +7,7 @@ use App\Http\Requests\StoreproductoRequest;
 use App\Http\Requests\UpdateproductoRequest;
 use App\Models\Producto as ModelsProducto;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProductoController extends Controller
 {
@@ -45,8 +46,10 @@ class ProductoController extends Controller
        $producto->descuento = $request['descuento'];
        $producto->especificaciones = $request['especificaciones'];
        $producto->categoria_id = '1';
+       $path = Storage::disk('public')->put('img', $request->file('foto'));
+       $producto->foto = $path;
        $producto->save();
-       return view("altaProcuto");
+       return redirect("alta_de_productos");
     }
 
     /**

@@ -2,7 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\LoginController;
 use App\Http\Middleware\validarAdministradorMiddleware;
+use App\Models\Categoria;
+use App\Models\Producto;
+use Illuminate\Support\Facades\Auth;
+use Symfony\Component\HttpFoundation\Session\Session;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +24,8 @@ use App\Http\Middleware\validarAdministradorMiddleware;
 Route::get('/', [ProductoController::class, 'show']);
 
 Route::get('/alta_de_productos',function(){
-    return view("altaProducto");
+    $categorias = Categoria::all();
+    return view("altaProducto",['categorias'=>$categorias]);
 });
 
 Route::middleware([validarAdministradorMiddleware::class])->group(function ()
@@ -44,5 +51,19 @@ Route::get('/principal',function(){
     return view('layouts.general');
 });
 
+Route::get('/productos/detalle/{id}',function($id){
+    $producto = Producto::find($id);
+    if ($producto)
+        return view('producto',['producto'=>$producto]);
+    else
+        return abort(404,'No se encontro');
+});
 
-require __DIR__.'/auth.php';
+Route::get('login',function (Request $request){
+    $error = $request->session()->get('error');
+    return view('login',['error'=>$error]);
+});
+
+Route::post('login/ingresar',[LoginController::class,'ingresar']);
+
+//require __DIR__.'/auth.php';

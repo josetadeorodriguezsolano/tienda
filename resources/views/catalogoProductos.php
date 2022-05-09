@@ -28,7 +28,9 @@
                 <td>{{producto.descripcion}}</td>
                 <td>{{producto.precio}}</td>
                 <td>{{producto.cantidad}}</td>
-                <td><img src="{{producto.foto}}"></td>
+                <td><a href="/productos/detalle/{{producto.id}}">
+                    <img src="storage/{{producto.foto}}">
+                </a></td>
             </tr>
         </tbody>
     </table>
