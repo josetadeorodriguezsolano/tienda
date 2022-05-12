@@ -24,7 +24,20 @@ class StoreproductoRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'descripcion' => 'required|min:5|max:255',
+            'precio' => 'required|numeric|gt:0',
+            'cantidad' => 'required|integer|gt:0|lt:1000',
+            'descuento' => 'required|numeric|between:0,100',
+            'especificaciones' => 'required|max:255',
+            'categoria' => 'required|integer|exists:categorias,id',
+            'foto' => 'required|file|mimes:jpeg|max:50',
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'categoria.exists' => 'Categoria no existente',
         ];
     }
 }

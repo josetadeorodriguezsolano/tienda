@@ -23,22 +23,23 @@ use Illuminate\Http\Request;
 
 Route::get('/', [ProductoController::class, 'show']);
 
-Route::get('/alta_de_productos',function(){
-    $categorias = Categoria::all();
-    return view("altaProducto",['categorias'=>$categorias]);
-});
-
 Route::middleware([validarAdministradorMiddleware::class])->group(function ()
 {
-    Route::get('/catalogo_productos',function(){
-        return view("catalogoProductos");
+    Route::get('/alta_de_productos',function(){
+        $categorias = Categoria::all();
+        return view("altaProducto",['categorias'=>$categorias]);
     });
 
-    Route::get('/catalogo_productos/catalogo',[ProductoController::class,'catalogo']);
+    Route::get('/catalogo_productos/{id}',function($id){
+        return view("catalogoProductos");
+    });
+    Route::controller(ProductoController::class)->group(function () {
+        Route::get('/catalogo_productos/catalogo','catalogo');
 
-    Route::get('/catalogo_productos/eliminar/{ids}',[ProductoController::class,'eliminar']);
+        Route::get('/catalogo_productos/eliminar/{ids}','eliminar');
 
-    Route::post('/alta_de_productos/insertar',[ProductoController::class, 'insertar']);
+        Route::post('/alta_de_productos/insertar', 'insertar');
+    });
 });
 
 Route::get('/dashboard', function () {

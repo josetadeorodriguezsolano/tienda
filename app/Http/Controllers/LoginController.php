@@ -23,7 +23,7 @@ class LoginController extends Controller
                 return redirect('principal');
             }
         }
-        Session::flash('error',$password."<br/>".$user->password. 'Nombre de usuario o contraseña incorrectos');
+        Session::flash('error','Nombre de usuario o contraseña incorrectos');
         return redirect('login');
     }
 }

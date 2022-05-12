@@ -39,13 +39,22 @@ class ProductoController extends Controller
      */
     public function insertar(StoreproductoRequest $request)
     {
+        /*$request->validate([
+            'descripcion' => 'required|min:5|max:255',
+            'precio' => 'required|numeric|gt:0',
+            'cantidad' => 'required|integer|gt:0|lt:1000',
+            'descuento' => 'required|numeric|between:0,100',
+            'especificaciones' => 'required|max:255',
+            'categoria' => 'required|integer|exists:categorias,id',
+        ]);*/
+
        $producto = new Producto();
        $producto->descripcion = $request['descripcion'];
        $producto->precio = $request['precio'];
        $producto->cantidad = $request['cantidad'];
        $producto->descuento = $request['descuento'];
        $producto->especificaciones = $request['especificaciones'];
-       $producto->categoria_id = '1';
+       $producto->categoria_id = $request['categoria'];
        $path = Storage::disk('public')->put('img', $request->file('foto'));
        $producto->foto = $path;
        $producto->save();

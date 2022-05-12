@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -17,7 +18,8 @@ class validarAdministradorMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        $usuario = Auth::user();
+        //Session::get('user');
+        $usuario = $request->session()->get('user'); //Auth::user();
         if ($usuario!=null && $usuario->tipo=="administrador")
             return $next($request);
         else
