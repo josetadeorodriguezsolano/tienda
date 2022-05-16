@@ -14,8 +14,8 @@ class AlterUserTable extends Migration
      */
     public function up()
     {
-        DB::statement("ALTER TABLE users ADD COLUMN tipo ENUM('cliente','administrador')"
-                ." NOT NULL DEFAULT 'cliente' AFTER correo");
+        // DB::statement("ALTER TABLE users ADD COLUMN tipo ENUM('cliente','administrador')"
+        //         ." NOT NULL DEFAULT 'cliente' AFTER correo");
     }
 
     /**

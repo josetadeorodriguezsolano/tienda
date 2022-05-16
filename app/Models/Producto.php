@@ -26,4 +26,9 @@ class Producto extends Model
             $admin->enviarCorreo("Mensaje");
         }
     }
+
+    public function categoria()
+    {
+        return $this->hasOne(Categoria::class, 'id', 'categoria_id');
+    }
 }
