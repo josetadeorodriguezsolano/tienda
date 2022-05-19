@@ -30,7 +30,7 @@ class StoreproductoRequest extends FormRequest
             'descuento' => 'required|numeric|between:0,100',
             'especificaciones' => 'required|max:255',
             'categoria' => 'required|integer|exists:categorias,id',
-            'foto' => 'required|file|mimes:jpeg|max:50',
+            //'foto' => 'required|file|mimes:jpeg|max:50',
         ];
     }
 

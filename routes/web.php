@@ -10,17 +10,6 @@ use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Illuminate\Http\Request;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', [ProductoController::class, 'show']);
 
 Route::middleware([validarAdministradorMiddleware::class])->group(function ()
@@ -30,15 +19,28 @@ Route::middleware([validarAdministradorMiddleware::class])->group(function ()
         return view("altaProducto",['categorias'=>$categorias]);
     });
 
-    Route::get('/catalogo_productos/{id}',function($id){
-        return view("catalogoProductos");
-    });
     Route::controller(ProductoController::class)->group(function () {
         Route::get('/catalogo_productos/catalogo','catalogo');
 
         Route::get('/catalogo_productos/eliminar/{ids}','eliminar');
 
         Route::post('/alta_de_productos/insertar', 'insertar');
+
+        Route::post('/alta_de_productos/actualizar', 'actualizar');
+
+        Route::get('/catalogo_productos/actualizar/{id}', function($id){
+            return view('actualizarProducto',["producto"=>Producto::find($id)
+                    ,"categorias"=>Categoria::all()]);
+        });
+    });
+
+    Route::get('/catalogo_productos/catalogo2',function(){
+        return view('catalogoProductos2',["productos"=>Producto::all()
+                                         ,"categorias"=>Categoria::all()]);
+    });
+
+    Route::get('/catalogo_productos',function(){
+        return view("catalogoProductos");
     });
 });
 

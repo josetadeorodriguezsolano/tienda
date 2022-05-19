@@ -15,6 +15,7 @@
     @endif
     <form enctype="multipart/form-data" method="post" action="/alta_de_productos/insertar" name="formProducto">
         @csrf
+        <input type="hidden" name="id" value="{{old('descripcion')}}">
         Descripcion:<input type="text" name="descripcion" value="{{old('descripcion')}}"/><br/>
         Cantidad:<input type="number" name="cantidad" value="{{old('cantidad')}}"/><br/>
         Precio:<input type="text" name="precio" value="{{old('precio')}}" /><br/>

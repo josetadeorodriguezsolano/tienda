@@ -61,6 +61,24 @@ class ProductoController extends Controller
        return redirect("alta_de_productos");
     }
 
+    public function actualizar(StoreproductoRequest $request)
+    {
+       $producto = Producto::find($request['id']);
+       $producto->descripcion = $request['descripcion'];
+       $producto->precio = $request['precio'];
+       $producto->cantidad = $request['cantidad'];
+       $producto->descuento = $request['descuento'];
+       $producto->especificaciones = $request['especificaciones'];
+       $producto->categoria_id = $request['categoria'];
+       if ($request->file('foto'))
+       {
+            $path = Storage::disk('public')->put('img', $request->file('foto'));
+            $producto->foto = $path;
+       }
+       $producto->save();
+       return redirect("catalogo_productos/catalogo2");
+    }
+
     /**
      * Display the specified resource.
      *
