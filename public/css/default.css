@@ -1,0 +1,56 @@
+/* Define standard variables and values for website */
+/* Use the variables */
+body {
+  background-color: lightblue;
+  color: darkblue;
+  font-size: 18px;
+}
+
+/* define variables for the primary colors */
+/* use the variables */
+.main-header {
+  background-color: #a2b9bc;
+}
+
+.menu-left {
+  background-color: #b2ad7f;
+}
+
+.menu-right {
+  background-color: #878f99;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+/* This CSS will print because %message-shared is extended. */
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
