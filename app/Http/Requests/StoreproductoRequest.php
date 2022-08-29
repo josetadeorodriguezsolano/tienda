@@ -37,6 +37,7 @@ class StoreproductoRequest extends FormRequest
     public function messages()
     {
         return [
+            'descripcion.required' => 'La descripcion es requerida',
             'categoria.exists' => 'Categoria no existente',
         ];
     }
