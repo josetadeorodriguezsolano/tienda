@@ -1,0 +1,16 @@
+$color: black;
+$fondo: lightblue;
+$color_encabezado: white;
+$fondo_encabezado: darkblue;
+
+$color_oscuro: white;
+$fondo_oscuro: black;
+.color{
+    color: $color;
+    background-color: $fondo;
+}
+
+.color_encabezado{
+    color: $color_encabezado;
+    background-color: $fondo_encabezado;
+}
