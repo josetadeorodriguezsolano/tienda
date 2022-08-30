@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Illuminate\Http\Request;
 
-Route::get('/', [ProductoController::class, 'show']);
+Route::get('/', [ProductoController::class, 'show'])->name('principal');
 
 Route::middleware([validarAdministradorMiddleware::class])->group(function ()
 {
@@ -61,7 +61,7 @@ Route::get('/dashboard', function () {
 Route::get('/productos/masvendidos',[ProductoController::class,'masVendidos']);
 
 Route::get('/principal',function(){
-    return view('layouts.general');
+    return view('principal');
 });
 
 Route::get('/productos/detalle/{id}',function($id){
@@ -79,4 +79,5 @@ Route::get('login',function (Request $request){
 
 Route::post('login/ingresar',[LoginController::class,'ingresar']);
 
+Route::get('cambiarEstilo',[LoginController::class,'cambiarEstilo']);
 //require __DIR__.'/auth.php';

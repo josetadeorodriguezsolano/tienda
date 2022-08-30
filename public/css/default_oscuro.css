@@ -2072,13 +2072,13 @@ a {
   border-color: #e7ffff !important;
 }
 
-/* line 8, ../www/tienda/resources/sass/_colores.scss */
+/* line 7, ../www/tienda/resources/sass/_colores_oscuros.scss */
 .color, body > main {
-  color: black;
-  background-color: lightblue;
+  color: white;
+  background-color: black;
 }
 
-/* line 13, ../www/tienda/resources/sass/_colores.scss */
+/* line 12, ../www/tienda/resources/sass/_colores_oscuros.scss */
 .color_encabezado, body > header {
   color: white;
   background-color: darkblue;
@@ -2288,4 +2288,4 @@ nav a {
   border-color: yellow;
 }
 
-/*# sourceMappingURL=default.css.map */
+/*# sourceMappingURL=default_oscuro.css.map */

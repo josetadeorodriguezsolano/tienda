@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="/css/default.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/default{{Session::get('estilo')}}.css"/>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="/js/angular.js"></script>
         @yield('scripts')
         @yield('estilos')
         <title>@yield('titulo')</title>
