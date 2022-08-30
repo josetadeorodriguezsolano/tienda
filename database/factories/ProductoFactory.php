@@ -18,7 +18,7 @@ class ProductoFactory extends Factory
             "precio" => $this->faker->numberBetween(10,1000),
             "cantidad" => $this->faker->numberBetween(1,50),
             "descuento" => $this->faker->numberBetween(0,30),
-            "fotp"=> "/storage/img/galleta_animalitos.jpg",
+            "foto"=> "/img/galleta_animalitos.jpg",
             //'foto'=>$this->faker->imageUrl(40, 40, 'cats'),
             "especificaciones" => $this->faker->realText(200),
             "categoria_id" => $this->faker->numberBetween(1,10)//$this->faker->numberBetween(1,10),
