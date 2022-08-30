@@ -1,32 +1,49 @@
-body>header{
-    width: 100%;
-    height: 200px;
-    background-color: aqua;
-    float: left;
-}
-body>nav{
-    width: 20%;
-    min-height: 500px;
-    background-color: coral;
-    float: left;
-}
-body>main{
-    width: 60%;
-    min-height: 500px;
-    background-color: cadetblue;
-    float: left;
-}
-body>aside{
-    width:20%;
-    min-height: 500px;
-    background-color:darkkhaki;
-    float: left;
-}
-body>footer{
-    width: 100%;
-    height: 200px;
-    background-color:darkviolet;
-    float: left;
+@import 'w3';
+body{
+
+    header{
+        /*width: 100%;
+        height: 200px;
+        float: left;
+        */
+        background-color: aqua;
+        @extend .w3-container;
+    }
+    nav{
+        /*
+        width: 20%;
+        min-height: 500px;
+        float: left;*/
+        background-color: coral;
+        @extend .w3-bar;
+    }
+    main{
+        /*
+        width: 60%;
+        min-height: 500px;
+        float: left;*/
+        background-color: cadetblue;
+        @extend .w3-container;
+    }
+    aside{
+        /*
+        width:20%;
+        min-height: 500px;
+        */
+        background-color:darkkhaki;
+        float: left;
+        @extend .w3-container;
+    }
+    footer{
+        /*
+        width: 100%;
+        height: 200px;
+        float: left;*/
+        background-color:darkviolet;
+        @extend .w3-container;
+        @extend .w3-left-align;
+    }
+
 }
 main>section[name="tarjeta"]
 {
