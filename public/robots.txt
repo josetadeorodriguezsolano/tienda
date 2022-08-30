@@ -1,5 +1,6 @@
 User-agent: *
 Disallow:
+<<<<<<< HEAD
 rigoberto
 EmilioMendoza9
 Josue
@@ -8,3 +9,6 @@ Jorge
 
 Brandon Eliel Colmenero Heraldes
 Carlos
+=======
+Jorge Alberto
+>>>>>>> tienda/jorge
