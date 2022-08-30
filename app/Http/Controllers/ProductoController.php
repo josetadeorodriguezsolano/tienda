@@ -87,7 +87,7 @@ class ProductoController extends Controller
      */
     public function show(producto $producto)
     {
-        $productos = Producto::paginate(12);
+        $productos = Producto::all();
         return view('principal',['productos'=>$productos]);
     }
 

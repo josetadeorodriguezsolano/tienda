@@ -1,0 +1,15 @@
+$color:black;
+$fondo:lightgray;
+$color_encabezado:white;
+$fondo_encabezado:blue;
+
+.colorClaro{
+    color: $color;
+    background-color: $fondo;
+
+}
+
+.colorOscuro{
+    color: $color;
+    background-color: $fondo;
+}
