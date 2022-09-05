@@ -2072,16 +2072,16 @@ a {
   border-color: #e7ffff !important;
 }
 
-/* line 7, ../www/tienda/resources/sass/_colores_oscuros.scss */
+/* line 3, ../www/tienda/resources/sass/default_oscuro.scss */
 .color, body > main {
   color: white;
   background-color: black;
 }
 
-/* line 12, ../www/tienda/resources/sass/_colores_oscuros.scss */
+/* line 6, ../www/tienda/resources/sass/default_oscuro.scss */
 .color_encabezado, body > header {
   color: white;
-  background-color: darkblue;
+  background-color: black;
 }
 
 /* line 2, ../www/tienda/resources/sass/_general.scss */
