@@ -56,6 +56,7 @@ class ProductoController extends Controller
        $producto->especificaciones = $request['especificaciones'];
        $producto->categoria_id = $request['categoria'];
        $path = Storage::disk('public')->put('img', $request->file('foto'));
+       //$path = Storage::putFileAs('public',$request->file('foto'),'img/'.$clave.'.jpg');
        $producto->foto = $path;
        $producto->save();
        return redirect("alta_de_productos");

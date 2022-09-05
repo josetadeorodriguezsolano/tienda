@@ -1,0 +1,200 @@
+body> {
+    header{
+        width: 100%;
+        height: 200px;
+        @extend .color_encabezado;
+        float: left;
+    }
+    nav{
+        width: 20%;
+        min-height: 500px;
+        background-color: coral;
+        float: left;
+    }
+    main>{
+        width: 60%;
+        min-height: 500px;
+        @extend .color;
+        float: left;
+        section[name="tarjeta"]>
+        {
+            width: 250px;
+            height: 250px;
+            border-width: 10px;
+            border-style: solid;
+            float:left;
+            @extend .w3-card-4;
+            img {
+                @extend .w3-border;
+                @extend .w3-padding;
+            }
+        }
+    }
+    aside{
+        width:20%;
+        min-height: 500px;
+        background-color:darkkhaki;
+        float: left;
+    }
+    footer{
+        width: 100%;
+        height: 200px;
+        background-color:darkviolet;
+        float: left;
+    }
+}
+.text{
+    font-size: 16px;
+    font-family: Tahoma;
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.borde{
+    border-color: orange;
+    margin: 10px 0;
+}
+
+.titulo{
+    font-size: 28px;
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+.contenedor_proceso_pago > form{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.contenedor_tarjetas{
+    width: 100%;
+}
+
+.tarjeta_producto_procesoP{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.img_producto{
+    width: 200px;
+}
+
+.contenedor_datosPedido{
+    padding: 0px 15px 0 15px;
+}
+
+.select{
+    width: 280px;
+    min-height: 35px;
+    background: black;
+    color: white;
+    outline: none;
+    padding: 0 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-family: Tahoma;
+    font-size: 16px;
+
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 246.6l-127.1 128C176.4 380.9 168.2 384 160 384s-16.38-3.125-22.63-9.375l-127.1-128C.2244 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75S319.8 237.5 310.6 246.6z" fill="white" /></svg>');
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 10px;
+    padding-right: 30px;
+}
+
+.botonSubmit{
+    border: none;
+    background-color: black;
+    color: white;
+    font-family: Tahoma;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.botonSubmit:hover{
+    opacity: 90%;
+}
+
+/* Define standard variables and values for website */
+$bgcolor: lightblue;
+$textcolor: darkblue;
+$fontsize: 18px;
+
+/* Use the variables */
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+  font-size: $fontsize;
+}
+
+/* define variables for the primary colors */
+$primary_1: #a2b9bc;
+$primary_2: #b2ad7f;
+$primary_3: #878f99;
+
+/* use the variables */
+.main-header {
+  background-color: $primary_1;
+}
+
+.menu-left {
+  background-color: $primary_2;
+}
+
+.menu-right {
+  background-color: $primary_3;
+}
+
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }
+  /* This CSS will print because %message-shared is extended. */
+%message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+  }
+
+  // This CSS won't print because %equal-heights is never extended.
+  %equal-heights {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .message {
+    @extend %message-shared;
+  }
+
+  .success {
+    @extend %message-shared;
+    border-color: green;
+  }
+
+  .error {
+    @extend %message-shared;
+    border-color: red;
+  }
+
+  .warning {
+    @extend %message-shared;
+    border-color: yellow;
+  }

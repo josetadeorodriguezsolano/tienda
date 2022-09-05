@@ -1,16 +1,19 @@
 <?php
 
+use App\Http\Controllers\CarritoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\pedidoController;
 use App\Http\Middleware\validarAdministradorMiddleware;
+use App\Http\Middleware\validarUsuario;
 use App\Models\Categoria;
 use App\Models\Producto;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Illuminate\Http\Request;
 
-Route::get('/', [ProductoController::class, 'show']);
+Route::get('/', [ProductoController::class, 'show'])->name('principal');
 
 Route::middleware([validarAdministradorMiddleware::class])->group(function ()
 {
@@ -44,6 +47,13 @@ Route::middleware([validarAdministradorMiddleware::class])->group(function ()
     });
 });
 
+Route::middleware([validarUsuario::class])->group(function(){
+    Route::get('/carrito/procederPago', [CarritoController::class, 'procederPago']);
+
+    Route::post('/procesopago/confirmarcompra',[pedidoController::class,'makePedido']);
+
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
@@ -51,7 +61,7 @@ Route::get('/dashboard', function () {
 Route::get('/productos/masvendidos',[ProductoController::class,'masVendidos']);
 
 Route::get('/principal',function(){
-    return view('layouts.general');
+    return view('principal');
 });
 
 Route::get('/productos/detalle/{id}',function($id){
@@ -69,4 +79,5 @@ Route::get('login',function (Request $request){
 
 Route::post('login/ingresar',[LoginController::class,'ingresar']);
 
+Route::get('cambiarEstilo',[LoginController::class,'cambiarEstilo']);
 //require __DIR__.'/auth.php';
