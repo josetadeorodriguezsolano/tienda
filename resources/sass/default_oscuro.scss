@@ -1,3 +1,9 @@
 @import 'w3';
-@import 'colores_oscuros';
+@import 'colores';
+.color {
+    @include color(true)
+}
+.color_encabezado{
+    @include color(true)
+}
 @import 'general';
