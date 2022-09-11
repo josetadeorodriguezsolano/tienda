@@ -14,7 +14,10 @@ use Symfony\Component\HttpFoundation\Session\Session;
 use Illuminate\Http\Request;
 
 Route::get('/', [ProductoController::class, 'show'])->name('principal');
+Route::get('/plantilla',function(){
+    return view("plantillas");
 
+});
 Route::middleware([validarAdministradorMiddleware::class])->group(function ()
 {
     Route::get('/alta_de_productos',function(){
