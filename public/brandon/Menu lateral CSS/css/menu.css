@@ -1,0 +1,30 @@
+@keyframes maximizar {
+    from {width: 38px;}
+    to {width: 250px;}
+}
+@keyframes minimizar {
+    from {width: 250px;}
+    to {width: 38px;}
+}
+
+nav{
+    background-color: #002090;
+    width: 38px;
+    color: #CCC;
+    padding: 10px 10px 10px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+a {
+    color: #CCC;
+}
+ul{
+    list-style-type: none;
+}
+
+.maximizar {
+    animation: maximizar 0.5s ease-out 0s 1 forwards;
+}
+.minimizar {
+    animation: minimizar 0.5s ease-out 0s 1 forwards;
+}
