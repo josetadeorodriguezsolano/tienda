@@ -1,0 +1,32 @@
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+ul ul{
+    padding-left: 40px;
+}
+
+nav{
+    width: min-content;
+    border: 2px solid black;
+}
+nav .titulo1{
+    border: 1px solid black;
+}
+nav .titulo1 *{
+    
+    transition: transform 0.5s, max-height 0.5s;
+    transform-origin: top;
+}
+nav .titulo1>ul{
+    overflow: hidden;
+    max-height: 0px;
+    /*transform: scaleY(0);*/
+}
+nav .titulo1:hover>ul{
+    max-height: 300px;
+    /*transform: scaleY(1);*/
+}
+

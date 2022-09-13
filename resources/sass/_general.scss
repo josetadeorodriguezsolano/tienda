@@ -11,20 +11,23 @@ body> {
         background-color: coral;
         float: left;
     }
-    main>{
-        width: 60%;
-        min-height: 500px;
-        @extend .color;
-        float: left;
-        section[name="tarjeta"]>
+    main{
+      width: 60%;
+      min-height: 500px;
+      @extend .color;
+      float: left;
+
+        >section[name="tarjeta"]
         {
             width: 250px;
             height: 250px;
             border-width: 10px;
             border-style: solid;
             float:left;
+
             @extend .w3-card-4;
-            img {
+
+            >img {
                 @extend .w3-border;
                 @extend .w3-padding;
             }
