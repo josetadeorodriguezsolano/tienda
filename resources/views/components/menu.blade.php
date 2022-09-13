@@ -1,15 +1,17 @@
 <nav>
     <ul>
         <li>
-            <img src="/storage/img/computadoras.png">
-            <span>Computadoras</span>
+            <a>
+                <img src="/storage/img/computadoras.png">
+                <span>Computadoras</span>
+            </a>
             <ul>
                 <li>
                     <img src="/storage/img/computadoras.png">
                     <a href="">Laptops</a>
                 </li>
                 <li>
-                    <img src="">
+                    <img src="/storage/img/computadoras.png">
                     <a href="">Smartphones</a>
                 </li>
                 <li>
@@ -23,8 +25,10 @@
             </ul>
         </li>
         <li>
-            <img src="/storage/img/computadoras.png">
-            <span>hardware</span>
+            <a>
+                <img src="/storage/img/computadoras.png">
+                <span>hardware</span>
+            </a>
             <ul>
                 <li>
                     <img src="/storage/img/computadoras.png">
@@ -45,8 +49,10 @@
             </ul>
         </li>
         <li>
-            <img src="/storage/img/computadoras.png">
-            <span>Accesorios</span>
+            <a>
+                <img src="/storage/img/computadoras.png">
+                <span>Accesorios</span>
+            </a>
             <ul>
                 <li>
                     <img src="/storage/img/computadoras.png">
@@ -67,8 +73,10 @@
             </ul>
         </li>
         <li>
-            <img src="/storage/img/computadoras.png">
-            <span>Almacenamiento</span>
+            <a>
+                <img src="/storage/img/computadoras.png">
+                <span>Almacenamiento</span>
+            </a>
             <ul>
                 <li>
                     <img src="/storage/img/computadoras.png">
@@ -89,8 +97,10 @@
             </ul>
         </li>
         <li>
-            <img src="/storage/img/computadoras.png">
-            <span>Electronica</span>
+            <a>
+                <img src="/storage/img/computadoras.png">
+                <span>Electronica</span>
+            </a>
             <ul>
                 <li>
                     <img src="/storage/img/computadoras.png">

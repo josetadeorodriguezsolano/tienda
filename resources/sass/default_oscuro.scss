@@ -6,4 +6,5 @@
 .color_encabezado{
     @include color(true)
 }
+@import 'menu';
 @import 'general';

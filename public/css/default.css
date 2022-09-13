@@ -2084,6 +2084,51 @@ a {
   background-color: lightblue;
 }
 
+/* line 1, ../www/tienda/resources/sass/_menu.scss */
+nav {
+  color: darkblue;
+  background-color: white;
+  width: max-content;
+}
+
+/* line 6, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 10, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* line 15, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li img {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 19, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li > ul {
+  padding-left: 50px;
+}
+
+/* line 21, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li > ul > li {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* line 30, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li > ul > li > a {
+  display: inline;
+}
+
 /* line 2, ../www/tienda/resources/sass/_general.scss */
 body > header {
   width: 100%;
