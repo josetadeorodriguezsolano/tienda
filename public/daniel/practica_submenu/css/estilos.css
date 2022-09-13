@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu {
+    background-color: black;
+    width: 100px;
+    height: 100%;
+}
+
+#menu li {
+    height: 35px;
+    background-color: black;
+    transition: 0.25s;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+#menu li:hover {
+    background: #272727;
+}
+
+#menu ul {
+    display: none;
+    position: absolute;
+    top: 35px;
+    color: #fff;
+    margin: 0;
+    box-shadow: 1px 1px 1px black;
+}
+
+#menu ul li {
+    display: block;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+}
+
+/*Dejar de mostrar los menus*/
+#menu li:hover ul ul,
+#menu li:hover ul ul ul {
+    display: none;
+}
+
+/*Mostrar los menus*/
+#menu li:hover ul,
+#menu ul li:hover ul,
+#menu ul ul li:hover ul {
+    display: block;
+    margin-left: 90px;
+}
