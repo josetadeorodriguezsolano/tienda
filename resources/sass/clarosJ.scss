@@ -1,14 +1,29 @@
+@import 'w3';
+
 body{
+    background-color: azure;
     >header{
+        @extend .w3-border;
+        @extend .w3-padding;
+        background-color: bisque;
+        height: 20%;
+        width: 100%;
         >h1{
-            color:red;
+
         }
         >#login{
 
         }
     }
-    >nav{  }
+    >nav{
+        background-color: beige;
+        height: 5%;
+        width: 100%;
+
+    }
     >main{
+        height: 60%;
+        width: 100%;
         >section>{
             >article{
                 >header{}
@@ -33,7 +48,13 @@ body{
             }
         }
     }
-    >aside{}
-    >footer{}
+    >aside{
+        background-color: beige;
+    }
+    >footer{
+        background-color: bisque;
+        height: 15%;
+        width: 100%;
+    }
 }
 

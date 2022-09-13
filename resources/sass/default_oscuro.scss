@@ -1,9 +1,9 @@
 @import 'w3';
-@import 'colores';
+
 .color {
-    @include color(true)
+    //@include color(true)
 }
 .color_encabezado{
-    @include color(true)
+   // @include color(true)
 }
-@import 'general';
+//@import 'general';

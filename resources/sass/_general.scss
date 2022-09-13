@@ -2,7 +2,7 @@ body> {
     header{
         width: 100%;
         height: 200px;
-        @extend .color_encabezado;
+       // @extend .color_encabezado;
         float: left;
     }
     nav{
@@ -14,7 +14,7 @@ body> {
     main>{
         width: 60%;
         min-height: 500px;
-        @extend .color;
+        //@extend .color;
         float: left;
         section[name="tarjeta"]>
         {
@@ -25,8 +25,8 @@ body> {
             float:left;
             @extend .w3-card-4;
             img {
-                @extend .w3-border;
-                @extend .w3-padding;
+        //        @extend .w3-border;
+         //       @extend .w3-padding;
             }
         }
     }

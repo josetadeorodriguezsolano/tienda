@@ -18,6 +18,10 @@ Route::get('/plantilla',function(){
     return view("plantillas");
 
 });
+Route::get('/desplegar',function(){
+    return view("desplegar");
+
+});
 Route::middleware([validarAdministradorMiddleware::class])->group(function ()
 {
     Route::get('/alta_de_productos',function(){
