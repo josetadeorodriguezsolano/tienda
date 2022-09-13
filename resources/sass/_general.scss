@@ -1,30 +1,33 @@
-body> {
+body {
     header{
         width: 100%;
         height: 200px;
         @extend .color_encabezado;
-        float: left;
+
     }
     nav{
         width: 20%;
+
         min-height: 500px;
         background-color: coral;
-        float: left;
+
     }
-    main>{
+    main{
         width: 60%;
         min-height: 500px;
+        height: auto;
         @extend .color;
         float: left;
-        section[name="tarjeta"]>
+        >section[name="tarjeta"]
         {
             width: 250px;
             height: 250px;
             border-width: 10px;
             border-style: solid;
             float:left;
+
             @extend .w3-card-4;
-            img {
+            >img {
                 @extend .w3-border;
                 @extend .w3-padding;
             }
@@ -35,6 +38,7 @@ body> {
         min-height: 500px;
         background-color:darkkhaki;
         float: left;
+
     }
     footer{
         width: 100%;
@@ -73,7 +77,7 @@ body> {
 .tarjeta_producto_procesoP{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     gap: 20px;
 }
 
