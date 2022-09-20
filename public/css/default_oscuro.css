@@ -2091,33 +2091,37 @@ body > main {
   width: 60%;
   min-height: 500px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
 /* line 20, ../www/tienda/resources/sass/_general.scss */
 body > main > section[name="tarjeta"] {
-  width: 250px;
-  height: 250px;
-  border-width: 10px;
+  width: 140px;
+  height: 140px;
+  border-width: 5px;
   border-style: solid;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   flex-flow: wrap;
 }
 
 /* line 31, ../www/tienda/resources/sass/_general.scss */
 body > main > section[name="tarjeta"] img {
   display: flex;
+  width: 80px;
+  height: 80px;
 }
 
-/* line 35, ../www/tienda/resources/sass/_general.scss */
+/* line 37, ../www/tienda/resources/sass/_general.scss */
 body > main > section[name="tarjeta"] span {
-  display: flex;
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-/* line 40, ../www/tienda/resources/sass/_general.scss */
+/* line 44, ../www/tienda/resources/sass/_general.scss */
 body > aside {
   width: 20%;
   min-height: 500px;
@@ -2125,7 +2129,7 @@ body > aside {
   float: left;
 }
 
-/* line 46, ../www/tienda/resources/sass/_general.scss */
+/* line 50, ../www/tienda/resources/sass/_general.scss */
 body > footer {
   width: 100%;
   height: 200px;
@@ -2133,7 +2137,7 @@ body > footer {
   float: left;
 }
 
-/* line 53, ../www/tienda/resources/sass/_general.scss */
+/* line 57, ../www/tienda/resources/sass/_general.scss */
 .text {
   font-size: 16px;
   font-family: Tahoma;
@@ -2141,41 +2145,41 @@ body > footer {
   padding: 0;
 }
 
-/* line 60, ../www/tienda/resources/sass/_general.scss */
+/* line 64, ../www/tienda/resources/sass/_general.scss */
 .borde {
   border-color: orange;
   margin: 10px 0;
 }
 
-/* line 65, ../www/tienda/resources/sass/_general.scss */
+/* line 69, ../www/tienda/resources/sass/_general.scss */
 .titulo {
   font-size: 28px;
   font-family: Tahoma;
   font-weight: bold;
 }
 
-/* line 71, ../www/tienda/resources/sass/_general.scss */
+/* line 75, ../www/tienda/resources/sass/_general.scss */
 .contenedor_proceso_pago > form {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
 
-/* line 76, ../www/tienda/resources/sass/_general.scss */
+/* line 80, ../www/tienda/resources/sass/_general.scss */
 .contenedor_tarjetas {
   width: 100%;
 }
 
-/* line 80, ../www/tienda/resources/sass/_general.scss */
+/* line 84, ../www/tienda/resources/sass/_general.scss */
 .img_producto {
   width: 200px;
 }
 
-/* line 84, ../www/tienda/resources/sass/_general.scss */
+/* line 88, ../www/tienda/resources/sass/_general.scss */
 .contenedor_datosPedido {
   padding: 0px 15px 0 15px;
 }
 
-/* line 88, ../www/tienda/resources/sass/_general.scss */
+/* line 92, ../www/tienda/resources/sass/_general.scss */
 .select {
   width: 280px;
   min-height: 35px;
@@ -2196,7 +2200,7 @@ body > footer {
   padding-right: 30px;
 }
 
-/* line 109, ../www/tienda/resources/sass/_general.scss */
+/* line 113, ../www/tienda/resources/sass/_general.scss */
 .botonSubmit {
   border: none;
   background-color: black;
@@ -2209,14 +2213,14 @@ body > footer {
   cursor: pointer;
 }
 
-/* line 121, ../www/tienda/resources/sass/_general.scss */
+/* line 125, ../www/tienda/resources/sass/_general.scss */
 .botonSubmit:hover {
   opacity: 90%;
 }
 
 /* Define standard variables and values for website */
 /* Use the variables */
-/* line 131, ../www/tienda/resources/sass/_general.scss */
+/* line 135, ../www/tienda/resources/sass/_general.scss */
 body {
   background-color: lightblue;
   color: darkblue;
@@ -2225,34 +2229,34 @@ body {
 
 /* define variables for the primary colors */
 /* use the variables */
-/* line 143, ../www/tienda/resources/sass/_general.scss */
+/* line 147, ../www/tienda/resources/sass/_general.scss */
 .main-header {
   background-color: #a2b9bc;
 }
 
-/* line 147, ../www/tienda/resources/sass/_general.scss */
+/* line 151, ../www/tienda/resources/sass/_general.scss */
 .menu-left {
   background-color: #b2ad7f;
 }
 
-/* line 151, ../www/tienda/resources/sass/_general.scss */
+/* line 155, ../www/tienda/resources/sass/_general.scss */
 .menu-right {
   background-color: #878f99;
 }
 
-/* line 156, ../www/tienda/resources/sass/_general.scss */
+/* line 160, ../www/tienda/resources/sass/_general.scss */
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 161, ../www/tienda/resources/sass/_general.scss */
+/* line 165, ../www/tienda/resources/sass/_general.scss */
 nav li {
   display: inline-block;
 }
 
-/* line 164, ../www/tienda/resources/sass/_general.scss */
+/* line 168, ../www/tienda/resources/sass/_general.scss */
 nav a {
   display: block;
   padding: 6px 12px;
@@ -2260,24 +2264,24 @@ nav a {
 }
 
 /* This CSS will print because %message-shared is extended. */
-/* line 171, ../www/tienda/resources/sass/_general.scss */
+/* line 175, ../www/tienda/resources/sass/_general.scss */
 .message, .success, .error, .warning {
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
 }
 
-/* line 187, ../www/tienda/resources/sass/_general.scss */
+/* line 191, ../www/tienda/resources/sass/_general.scss */
 .success {
   border-color: green;
 }
 
-/* line 192, ../www/tienda/resources/sass/_general.scss */
+/* line 196, ../www/tienda/resources/sass/_general.scss */
 .error {
   border-color: red;
 }
 
-/* line 197, ../www/tienda/resources/sass/_general.scss */
+/* line 201, ../www/tienda/resources/sass/_general.scss */
 .warning {
   border-color: yellow;
 }

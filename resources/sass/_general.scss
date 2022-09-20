@@ -15,25 +15,29 @@ body> {
         min-height: 500px;
         @extend .color;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         >section[name="tarjeta"]
         {
-            width: 250px;
-            height: 250px;
-            border-width: 10px;
+            width: 140px;
+            height: 140px;
+            border-width: 5px;
             border-style: solid;
             display: flex;
             flex-direction: row;
-            align-items: center;
+            justify-content: center;
             flex-flow: wrap;
             //@extend .w3-card-4;
             img {
                 display: flex;
                 //@extend .w3-padding;
+                width: 80px;
+                height: 80px;
             }
             span{
-                display: flex;
+                display: inline;
+                overflow: hidden;
+                white-space: nowrap;
             }
         }
     }

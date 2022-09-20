@@ -5,6 +5,7 @@
         <script src="/js/jquery.js"></script>
         <script src="/js/angular.min.js"></script>
         <script src="/js/menu.js"></script>
+        <script src="/js/carrito.js"></script>
         @yield('scripts')
         @yield('estilos')
         <title>@yield('titulo')</title>
