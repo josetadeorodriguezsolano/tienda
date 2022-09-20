@@ -1,9 +1,25 @@
 @import 'w3';
+<<<<<<< HEAD
 
+=======
+@import 'colores';
+@import 'general';
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .color {
     //@include color(true)
 }
 .color_encabezado{
    // @include color(true)
 }
+<<<<<<< HEAD
 //@import 'general';
+=======
+.color_menu{
+    @include color_menu(true)
+}
+.color_submenu{
+    @include color_submenu(true)
+}
+@import 'menu';
+
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
