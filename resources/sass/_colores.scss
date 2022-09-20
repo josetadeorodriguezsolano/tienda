@@ -2,11 +2,20 @@ $color: black;
 $fondo: lightblue;
 $color_encabezado: darkblue;
 $fondo_encabezado: white;
+$color_menu:darkblue;
+$fondo_menu:rgb(202, 188, 248);
+$color_submenu:darkblue;
+$fondo_submenu:rgb(225, 217, 251);
+
 
 $color_oscuro: white;
 $fondo_oscuro: black;
 $color_encabezado_oscuro: white;
 $fondo_encabezado_oscuro: darkblue;
+$color_menu_oscuro:lightblue;
+$fondo_menu_oscuro:darkblue;
+$color_submenu_oscuro:lightblue;
+$fondo_submenu_oscuro:rgb(56, 56, 202);
 
 @mixin color($oscuro:false) {
     @if $oscuro {
@@ -27,5 +36,27 @@ $fondo_encabezado_oscuro: darkblue;
     @else {
         color: $color_encabezado;
         background-color: $fondo_encabezado;
+    }
+}
+
+@mixin color_menu($oscuro:false){
+    @if $oscuro {
+        color: $color_menu_oscuro;
+        background-color: $fondo_menu_oscuro;
+    }
+    @else {
+        color: $color_menu;
+        background-color: $fondo_menu;
+    }
+}
+
+@mixin color_submenu($oscuro:false){
+    @if $oscuro {
+        color: $color_submenu_oscuro;
+        background-color: $fondo_submenu_oscuro;
+    }
+    @else {
+        color: $color_submenu;
+        background-color: $fondo_submenu;
     }
 }

@@ -1,124 +1,163 @@
-<nav>
-    <ul>
-        <li>
-            <a>
+<img id="menubar_icono" src="/storage/img/menu-bar-icon.svg" width="24px">
+<ul>
+    <li>
+        <a>
+            <img src="/storage/img/computadoras.png">
+            <span>Computadoras</span>
+        </a>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Laptops</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Smartphones</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Desktops</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Tablets</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a>
+            <img src="/storage/img/computadoras.png">
+            <span>hardware</span>
+        </a>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Tarjetas de video</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Discos duros</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Procesadores</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Memorias</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a>
+            <img src="/storage/img/computadoras.png">
+            <span>Accesorios</span>
+        </a>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Teclados</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Mouses</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Bocinas</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Sillas</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a>
+            <img src="/storage/img/computadoras.png">
+            <span>Almacenamiento</span>
+        </a>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="/storage/img/computadoras.png">
+                    <span>Flash</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
                 <img src="/storage/img/computadoras.png">
-                <span>Computadoras</span>
+                <span>Discos internos</span>
             </a>
-            <ul>
-                <li>
+            </li>
+            <li>
+                <a href="">
                     <img src="/storage/img/computadoras.png">
-                    <a href="">Laptops</a>
-                </li>
-                <li>
+                    <span>Discos externos</span>
+                 </a>
+            </li>
+            <li>
+                <a href="">
                     <img src="/storage/img/computadoras.png">
-                    <a href="">Smartphones</a>
-                </li>
-                <li>
+                    <span>SSD</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a>
+            <img src="/storage/img/computadoras.png">
+            <span>Electronica</span>
+        </a>
+        <ul>
+            <li>
+                <a href="">
                     <img src="/storage/img/computadoras.png">
-                    <a href="">Desktops</a>
-                </li>
-                <li>
+                    <span>Monitores</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
                     <img src="/storage/img/computadoras.png">
-                    <a href="">Tablets</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a>
-                <img src="/storage/img/computadoras.png">
-                <span>hardware</span>
-            </a>
-            <ul>
-                <li>
+                    <span>Televisores</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
                     <img src="/storage/img/computadoras.png">
-                    <a href="">Tarjetas de video</a>
-                </li>
-                <li>
+                    <span>Proyectores</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
                     <img src="/storage/img/computadoras.png">
-                    <a href="">Discos duros</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Procesadores</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Memorias</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a>
-                <img src="/storage/img/computadoras.png">
-                <span>Accesorios</span>
-            </a>
-            <ul>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Teclados</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Mouses</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Bocinas</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Sillas</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a>
-                <img src="/storage/img/computadoras.png">
-                <span>Almacenamiento</span>
-            </a>
-            <ul>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Flash</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Discos internos</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Discos externos</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">SSD</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a>
-                <img src="/storage/img/computadoras.png">
-                <span>Electronica</span>
-            </a>
-            <ul>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Monitores</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Televisores</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Proyectores</a>
-                </li>
-                <li>
-                    <img src="/storage/img/computadoras.png">
-                    <a href="">Camaras</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+                    <span>Camaras</span>
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>

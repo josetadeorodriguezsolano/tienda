@@ -6,27 +6,34 @@ body> {
         float: left;
     }
     nav{
-        width: 20%;
         min-height: 500px;
-        background-color: coral;
         float: left;
+        overflow: hidden;
     }
-    main>{
+    main{
         width: 60%;
         min-height: 500px;
         @extend .color;
-        float: left;
-        section[name="tarjeta"]>
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        >section[name="tarjeta"]
         {
             width: 250px;
             height: 250px;
             border-width: 10px;
             border-style: solid;
-            float:left;
-            @extend .w3-card-4;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-flow: wrap;
+            //@extend .w3-card-4;
             img {
-                @extend .w3-border;
-                @extend .w3-padding;
+                display: flex;
+                //@extend .w3-padding;
+            }
+            span{
+                display: flex;
             }
         }
     }
@@ -68,13 +75,6 @@ body> {
 
 .contenedor_tarjetas{
     width: 100%;
-}
-
-.tarjeta_producto_procesoP{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
 }
 
 .img_producto{

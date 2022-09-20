@@ -1,37 +1,109 @@
+@keyframes mostrar_alto {
+    from {max-height: 0px; }
+    to {max-height:300px;}
+}
+@keyframes ocultar_alto {
+    from {max-height: 300px; }
+    to {max-height:0px;}
+}
+@keyframes mostrar_ancho {
+    from {max-width: 0px; }
+    to {max-width:300px; }
+}
+@keyframes ocultar_ancho {
+    from {max-width: 300px; }
+    to {max-width:0px; }
+}
+.animar_mostrar_ancho{
+    animation-name: mostrar_ancho;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.animar_ocultar_ancho{
+    animation-name: ocultar_ancho;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.animar_mostrar_alto{
+    animation-name: mostrar_ancho_alto;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.animar_ocultar_alto{
+    animation-name: ocultar_ancho_alto;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 nav{
-    color: $color_encabezado;
-    background-color: $fondo_encabezado;
-    width: max-content;
+    @extend .color_menu;
+    //width: max-content;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    li {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    a {
+        display: flex;
+        text-decoration: none;
+        flex-direction: row;
+        align-items: center;
+    }
     >ul{
+        @extend .color_menu;
         >li{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            >a{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-            }
+            align-items: flex-start;
+            width: 100%;
             img{
                 width: 16px;
                 height: 16px;
             }
+            span{
+                padding-left: 8px;
+            }
             >ul{
-                padding-left: 50px;
+                @extend .color_submenu;
+                padding-left: 24px;
+                width: 100%;
                 >li{
-                    display: flex;
-                    flex-wrap: nowrap;
                     flex-direction: row;
-                    //justify-content: center;
                     align-items: center;
-                    >img{
-
-                    }
-                    >a{
-                        display: inline;
-                    }
                 }
             }
         }
+    }
+    .submenu_visible{
+
+    }
+    .submenu_invisible{
+
+    }
+}
+
+@media print {
+    nav{
+        display:none;
+        visibility:hidden;
+    }
+    button{
+        display:none;
+    }
+}
+@media screen and (min-width:768px)
+{
+    nav{
+        display:none;
+        visibility:hidden;
     }
 }

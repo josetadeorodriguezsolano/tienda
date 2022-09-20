@@ -2,7 +2,9 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/css/default{{Session::get('estilo')}}.css"/>
-        <script src="/js/angular.js"></script>
+        <script src="/js/jquery.js"></script>
+        <script src="/js/angular.min.js"></script>
+        <script src="/js/menu.js"></script>
         @yield('scripts')
         @yield('estilos')
         <title>@yield('titulo')</title>

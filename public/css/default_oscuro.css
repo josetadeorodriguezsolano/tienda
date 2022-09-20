@@ -1188,7 +1188,7 @@ a {
 }
 
 /* line 115, ../www/tienda/resources/sass/w3.css */
-.w3-card-4, body > main > section[name="tarjeta"], .w3-hover-shadow:hover {
+.w3-card-4, .w3-hover-shadow:hover {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -1445,7 +1445,7 @@ a {
 }
 
 /* line 133, ../www/tienda/resources/sass/w3.css */
-.w3-border, body > main > section[name="tarjeta"] > img {
+.w3-border {
   border: 1px solid #ccc !important;
 }
 
@@ -1526,7 +1526,7 @@ a {
 }
 
 /* line 141, ../www/tienda/resources/sass/w3.css */
-.w3-padding, body > main > section[name="tarjeta"] > img {
+.w3-padding {
   padding: 8px 16px !important;
 }
 
@@ -2072,63 +2072,6 @@ a {
   border-color: #e7ffff !important;
 }
 
-/* line 3, ../www/tienda/resources/sass/default_oscuro.scss */
-.color, body > main {
-  color: white;
-  background-color: black;
-}
-
-/* line 6, ../www/tienda/resources/sass/default_oscuro.scss */
-.color_encabezado, body > header {
-  color: white;
-  background-color: black;
-}
-
-/* line 1, ../www/tienda/resources/sass/_menu.scss */
-nav {
-  color: darkblue;
-  background-color: white;
-  width: max-content;
-}
-
-/* line 6, ../www/tienda/resources/sass/_menu.scss */
-nav > ul > li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* line 10, ../www/tienda/resources/sass/_menu.scss */
-nav > ul > li > a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/* line 15, ../www/tienda/resources/sass/_menu.scss */
-nav > ul > li img {
-  width: 16px;
-  height: 16px;
-}
-
-/* line 19, ../www/tienda/resources/sass/_menu.scss */
-nav > ul > li > ul {
-  padding-left: 50px;
-}
-
-/* line 21, ../www/tienda/resources/sass/_menu.scss */
-nav > ul > li > ul > li {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center;
-}
-
-/* line 30, ../www/tienda/resources/sass/_menu.scss */
-nav > ul > li > ul > li > a {
-  display: inline;
-}
-
 /* line 2, ../www/tienda/resources/sass/_general.scss */
 body > header {
   width: 100%;
@@ -2138,29 +2081,43 @@ body > header {
 
 /* line 8, ../www/tienda/resources/sass/_general.scss */
 body > nav {
-  width: 20%;
   min-height: 500px;
-  background-color: coral;
   float: left;
+  overflow: hidden;
 }
 
-/* line 14, ../www/tienda/resources/sass/_general.scss */
-body > main > {
+/* line 13, ../www/tienda/resources/sass/_general.scss */
+body > main {
   width: 60%;
   min-height: 500px;
-  float: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-/* line 19, ../www/tienda/resources/sass/_general.scss */
-body > main > section[name="tarjeta"] > {
+/* line 20, ../www/tienda/resources/sass/_general.scss */
+body > main > section[name="tarjeta"] {
   width: 250px;
   height: 250px;
   border-width: 10px;
   border-style: solid;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-flow: wrap;
 }
 
-/* line 33, ../www/tienda/resources/sass/_general.scss */
+/* line 31, ../www/tienda/resources/sass/_general.scss */
+body > main > section[name="tarjeta"] img {
+  display: flex;
+}
+
+/* line 35, ../www/tienda/resources/sass/_general.scss */
+body > main > section[name="tarjeta"] span {
+  display: flex;
+}
+
+/* line 40, ../www/tienda/resources/sass/_general.scss */
 body > aside {
   width: 20%;
   min-height: 500px;
@@ -2168,7 +2125,7 @@ body > aside {
   float: left;
 }
 
-/* line 39, ../www/tienda/resources/sass/_general.scss */
+/* line 46, ../www/tienda/resources/sass/_general.scss */
 body > footer {
   width: 100%;
   height: 200px;
@@ -2176,7 +2133,7 @@ body > footer {
   float: left;
 }
 
-/* line 46, ../www/tienda/resources/sass/_general.scss */
+/* line 53, ../www/tienda/resources/sass/_general.scss */
 .text {
   font-size: 16px;
   font-family: Tahoma;
@@ -2184,36 +2141,28 @@ body > footer {
   padding: 0;
 }
 
-/* line 53, ../www/tienda/resources/sass/_general.scss */
+/* line 60, ../www/tienda/resources/sass/_general.scss */
 .borde {
   border-color: orange;
   margin: 10px 0;
 }
 
-/* line 58, ../www/tienda/resources/sass/_general.scss */
+/* line 65, ../www/tienda/resources/sass/_general.scss */
 .titulo {
   font-size: 28px;
   font-family: Tahoma;
   font-weight: bold;
 }
 
-/* line 64, ../www/tienda/resources/sass/_general.scss */
+/* line 71, ../www/tienda/resources/sass/_general.scss */
 .contenedor_proceso_pago > form {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
 
-/* line 69, ../www/tienda/resources/sass/_general.scss */
+/* line 76, ../www/tienda/resources/sass/_general.scss */
 .contenedor_tarjetas {
   width: 100%;
-}
-
-/* line 73, ../www/tienda/resources/sass/_general.scss */
-.tarjeta_producto_procesoP {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
 }
 
 /* line 80, ../www/tienda/resources/sass/_general.scss */
@@ -2331,6 +2280,172 @@ nav a {
 /* line 197, ../www/tienda/resources/sass/_general.scss */
 .warning {
   border-color: yellow;
+}
+
+/* line 4, ../www/tienda/resources/sass/default_oscuro.scss */
+.color, body > main {
+  color: white;
+  background-color: black;
+}
+
+/* line 7, ../www/tienda/resources/sass/default_oscuro.scss */
+.color_encabezado, body > header {
+  color: white;
+  background-color: black;
+}
+
+/* line 10, ../www/tienda/resources/sass/default_oscuro.scss */
+.color_menu, nav, nav > ul {
+  color: lightblue;
+  background-color: darkblue;
+}
+
+/* line 13, ../www/tienda/resources/sass/default_oscuro.scss */
+.color_submenu, nav > ul > li > ul {
+  color: lightblue;
+  background-color: #3838ca;
+}
+
+@keyframes mostrar_alto {
+  from {
+    max-height: 0px;
+  }
+  to {
+    max-height: 300px;
+  }
+}
+
+@keyframes ocultar_alto {
+  from {
+    max-height: 300px;
+  }
+  to {
+    max-height: 0px;
+  }
+}
+
+@keyframes mostrar_ancho {
+  from {
+    max-width: 0px;
+  }
+  to {
+    max-width: 300px;
+  }
+}
+
+@keyframes ocultar_ancho {
+  from {
+    max-width: 300px;
+  }
+  to {
+    max-width: 0px;
+  }
+}
+
+/* line 17, ../www/tienda/resources/sass/_menu.scss */
+.animar_mostrar_ancho {
+  animation-name: mostrar_ancho;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* line 22, ../www/tienda/resources/sass/_menu.scss */
+.animar_ocultar_ancho {
+  animation-name: ocultar_ancho;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* line 27, ../www/tienda/resources/sass/_menu.scss */
+.animar_mostrar_alto {
+  animation-name: mostrar_ancho_alto;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* line 32, ../www/tienda/resources/sass/_menu.scss */
+.animar_ocultar_alto {
+  animation-name: ocultar_ancho_alto;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* line 40, ../www/tienda/resources/sass/_menu.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* line 50, ../www/tienda/resources/sass/_menu.scss */
+nav li {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* line 55, ../www/tienda/resources/sass/_menu.scss */
+nav a {
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* line 63, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* line 68, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li img {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 72, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li span {
+  padding-left: 8px;
+}
+
+/* line 75, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li > ul {
+  padding-left: 24px;
+  width: 100%;
+}
+
+/* line 79, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li > ul > li {
+  flex-direction: row;
+  align-items: center;
+}
+
+@media print {
+  /* line 95, ../www/tienda/resources/sass/_menu.scss */
+  nav {
+    display: none;
+    visibility: hidden;
+  }
+  /* line 99, ../www/tienda/resources/sass/_menu.scss */
+  button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 105, ../www/tienda/resources/sass/_menu.scss */
+  nav {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 /*# sourceMappingURL=default_oscuro.css.map */
