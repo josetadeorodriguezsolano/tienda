@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "escritorio1.css",
+	"sources": [
+		"../../resources/sass/escritorio1.scss"
+	],
+	"sourcesContent": [
+		"body{\r\n    >header{\r\n        >h1{\r\n            color:red;\r\n        }\r\n        >#login{\r\n\r\n        }\r\n    }\r\n    >nav{  }\r\n    >main{\r\n        >section>{\r\n            >article{\r\n                >header{}\r\n                >main{}\r\n                >footer{}\r\n            }\r\n        }\r\n        >.formulario{\r\n            >article>{\r\n                >header{\r\n\r\n                }\r\n                >main{}\r\n                >footer{}\r\n            }\r\n        }\r\n        >.tabla{\r\n            >article{\r\n                >header{}\r\n                >main{}\r\n                >footer{}\r\n            }\r\n        }\r\n    }\r\n    >aside{}\r\n    >footer{}\r\n}\r\n\r\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAEQ,IAFJ,GACC,MAAM,GACF,EAAE,CAAA;EACC,KAAK,EAAC,GAAG;CACZ"
+}

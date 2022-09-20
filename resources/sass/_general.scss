@@ -6,30 +6,60 @@ body {
 
     }
     nav{
+<<<<<<< HEAD
         width: 20%;
 
         min-height: 500px;
         background-color: coral;
 
+=======
+        min-height: 500px;
+        float: left;
+        overflow: hidden;
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
     }
     main{
         width: 60%;
         min-height: 500px;
         height: auto;
         @extend .color;
+<<<<<<< HEAD
         float: left;
+=======
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
         >section[name="tarjeta"]
         {
-            width: 250px;
-            height: 250px;
-            border-width: 10px;
+            width: 140px;
+            height: 140px;
+            border-width: 5px;
             border-style: solid;
+<<<<<<< HEAD
             float:left;
 
             @extend .w3-card-4;
             >img {
                 @extend .w3-border;
                 @extend .w3-padding;
+=======
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-flow: wrap;
+            //@extend .w3-card-4;
+            img {
+                display: flex;
+                //@extend .w3-padding;
+                width: 80px;
+                height: 80px;
+            }
+            span{
+                display: inline;
+                overflow: hidden;
+                white-space: nowrap;
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
             }
         }
     }
@@ -74,6 +104,7 @@ body {
     width: 100%;
 }
 
+<<<<<<< HEAD
 .tarjeta_producto_procesoP{
     width: 100%;
     display: flex;
@@ -81,6 +112,8 @@ body {
     gap: 20px;
 }
 
+=======
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .img_producto{
     width: 200px;
 }

@@ -1,3 +1,17 @@
-@import 'w3';
+//@import 'w3';
 @import 'colores';
+.color {
+    @include color(false)
+}
+.color_encabezado{
+    @include color_encabezado(false)
+}
+.color_menu{
+    @include color_menu(false)
+}
+.color_submenu{
+    @include color_submenu(false)
+}
 @import 'general';
+@import 'menu';
+

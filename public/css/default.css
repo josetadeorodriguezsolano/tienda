@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 /* line 2, ../../../../../laragon/www/tienda/resources/sass/w3.css */
 html {
@@ -2074,14 +2075,37 @@ a {
 
 /* line 8, ../../../../../laragon/www/tienda/resources/sass/_colores.scss */
 .color, body main {
+=======
+/* line 3, ../www/tienda/resources/sass/default.scss */
+.color, body > main {
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
   color: black;
   background-color: lightblue;
 }
 
+<<<<<<< HEAD
 /* line 13, ../../../../../laragon/www/tienda/resources/sass/_colores.scss */
 .color_encabezado, body header {
   color: white;
   background-color: darkblue;
+=======
+/* line 6, ../www/tienda/resources/sass/default.scss */
+.color_encabezado, body > header {
+  color: darkblue;
+  background-color: white;
+}
+
+/* line 9, ../www/tienda/resources/sass/default.scss */
+.color_menu, nav, nav > ul {
+  color: darkblue;
+  background-color: #cabcf8;
+}
+
+/* line 12, ../www/tienda/resources/sass/default.scss */
+.color_submenu, nav > ul > li > ul {
+  color: darkblue;
+  background-color: #e1d9fb;
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 }
 
 /* line 2, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
@@ -2090,6 +2114,7 @@ body header {
   height: 200px;
 }
 
+<<<<<<< HEAD
 /* line 8, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
 body nav {
   width: 20%;
@@ -2110,27 +2135,81 @@ body main > section[name="tarjeta"] {
   width: 250px;
   height: 250px;
   border-width: 10px;
-  border-style: solid;
+=======
+/* line 8, ../www/tienda/resources/sass/_general.scss */
+body > nav {
+  min-height: 500px;
   float: left;
+  overflow: hidden;
 }
 
+/* line 13, ../www/tienda/resources/sass/_general.scss */
+body > main {
+  width: 60%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* line 20, ../www/tienda/resources/sass/_general.scss */
+body > main > section[name="tarjeta"] {
+  width: 140px;
+  height: 140px;
+  border-width: 5px;
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+}
+
+<<<<<<< HEAD
 /* line 36, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
 body aside {
+=======
+/* line 31, ../www/tienda/resources/sass/_general.scss */
+body > main > section[name="tarjeta"] img {
+  display: flex;
+  width: 80px;
+  height: 80px;
+}
+
+/* line 37, ../www/tienda/resources/sass/_general.scss */
+body > main > section[name="tarjeta"] span {
+  display: inline;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 44, ../www/tienda/resources/sass/_general.scss */
+body > aside {
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
   width: 20%;
   min-height: 500px;
   background-color: darkkhaki;
   float: left;
 }
 
+<<<<<<< HEAD
 /* line 43, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
 body footer {
+=======
+/* line 50, ../www/tienda/resources/sass/_general.scss */
+body > footer {
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
   width: 100%;
   height: 200px;
   background-color: darkviolet;
   float: left;
 }
 
+<<<<<<< HEAD
 /* line 50, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 57, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .text {
   font-size: 16px;
   font-family: Tahoma;
@@ -2138,30 +2217,47 @@ body footer {
   padding: 0;
 }
 
+<<<<<<< HEAD
 /* line 57, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 64, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .borde {
   border-color: orange;
   margin: 10px 0;
 }
 
+<<<<<<< HEAD
 /* line 62, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 69, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .titulo {
   font-size: 28px;
   font-family: Tahoma;
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* line 68, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 75, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .contenedor_proceso_pago > form {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
 
+<<<<<<< HEAD
 /* line 73, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 80, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .contenedor_tarjetas {
   width: 100%;
 }
 
+<<<<<<< HEAD
 /* line 77, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
 .tarjeta_producto_procesoP {
   width: 100%;
@@ -2171,16 +2267,27 @@ body footer {
 }
 
 /* line 84, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 84, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .img_producto {
   width: 200px;
 }
 
+<<<<<<< HEAD
 /* line 88, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 88, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .contenedor_datosPedido {
   padding: 0px 15px 0 15px;
 }
 
+<<<<<<< HEAD
 /* line 92, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 92, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .select {
   width: 280px;
   min-height: 35px;
@@ -2201,7 +2308,11 @@ body footer {
   padding-right: 30px;
 }
 
+<<<<<<< HEAD
 /* line 113, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 113, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .botonSubmit {
   border: none;
   background-color: black;
@@ -2214,14 +2325,22 @@ body footer {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* line 125, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 125, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .botonSubmit:hover {
   opacity: 90%;
 }
 
 /* Define standard variables and values for website */
 /* Use the variables */
+<<<<<<< HEAD
 /* line 135, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 135, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 body {
   background-color: lightblue;
   color: darkblue;
@@ -2230,34 +2349,58 @@ body {
 
 /* define variables for the primary colors */
 /* use the variables */
+<<<<<<< HEAD
 /* line 147, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 147, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .main-header {
   background-color: #a2b9bc;
 }
 
+<<<<<<< HEAD
 /* line 151, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 151, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .menu-left {
   background-color: #b2ad7f;
 }
 
+<<<<<<< HEAD
 /* line 155, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 155, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .menu-right {
   background-color: #878f99;
 }
 
+<<<<<<< HEAD
 /* line 160, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 160, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+<<<<<<< HEAD
 /* line 165, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 165, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 nav li {
   display: inline-block;
 }
 
+<<<<<<< HEAD
 /* line 168, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 168, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 nav a {
   display: block;
   padding: 6px 12px;
@@ -2265,26 +2408,184 @@ nav a {
 }
 
 /* This CSS will print because %message-shared is extended. */
+<<<<<<< HEAD
 /* line 175, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 175, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .message, .success, .error, .warning {
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
 }
 
+<<<<<<< HEAD
 /* line 191, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 191, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .success {
   border-color: green;
 }
 
+<<<<<<< HEAD
 /* line 196, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 196, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .error {
   border-color: red;
 }
 
+<<<<<<< HEAD
 /* line 201, ../../../../../laragon/www/tienda/resources/sass/_general.scss */
+=======
+/* line 201, ../www/tienda/resources/sass/_general.scss */
+>>>>>>> 4436fa113c3564218d3a445e80e66202f780cf9e
 .warning {
   border-color: yellow;
+}
+
+@keyframes mostrar_alto {
+  from {
+    max-height: 0px;
+  }
+  to {
+    max-height: 300px;
+  }
+}
+
+@keyframes ocultar_alto {
+  from {
+    max-height: 300px;
+  }
+  to {
+    max-height: 0px;
+  }
+}
+
+@keyframes mostrar_ancho {
+  from {
+    max-width: 0px;
+  }
+  to {
+    max-width: 300px;
+  }
+}
+
+@keyframes ocultar_ancho {
+  from {
+    max-width: 300px;
+  }
+  to {
+    max-width: 0px;
+  }
+}
+
+/* line 17, ../www/tienda/resources/sass/_menu.scss */
+.animar_mostrar_ancho {
+  animation-name: mostrar_ancho;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* line 22, ../www/tienda/resources/sass/_menu.scss */
+.animar_ocultar_ancho {
+  animation-name: ocultar_ancho;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* line 27, ../www/tienda/resources/sass/_menu.scss */
+.animar_mostrar_alto {
+  animation-name: mostrar_ancho_alto;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* line 32, ../www/tienda/resources/sass/_menu.scss */
+.animar_ocultar_alto {
+  animation-name: ocultar_ancho_alto;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* line 40, ../www/tienda/resources/sass/_menu.scss */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* line 50, ../www/tienda/resources/sass/_menu.scss */
+nav li {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* line 55, ../www/tienda/resources/sass/_menu.scss */
+nav a {
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* line 63, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* line 68, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li img {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 72, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li span {
+  padding-left: 8px;
+}
+
+/* line 75, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li > ul {
+  padding-left: 24px;
+  width: 100%;
+}
+
+/* line 79, ../www/tienda/resources/sass/_menu.scss */
+nav > ul > li > ul > li {
+  flex-direction: row;
+  align-items: center;
+}
+
+@media print {
+  /* line 95, ../www/tienda/resources/sass/_menu.scss */
+  nav {
+    display: none;
+    visibility: hidden;
+  }
+  /* line 99, ../www/tienda/resources/sass/_menu.scss */
+  button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 105, ../www/tienda/resources/sass/_menu.scss */
+  nav {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 /*# sourceMappingURL=default.css.map */

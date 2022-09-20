@@ -1,0 +1,39 @@
+body{
+    >header{
+        >h1{
+            color:red;
+        }
+        >#login{
+
+        }
+    }
+    >nav{  }
+    >main{
+        >section>{
+            >article{
+                >header{}
+                >main{}
+                >footer{}
+            }
+        }
+        >.formulario{
+            >article>{
+                >header{
+
+                }
+                >main{}
+                >footer{}
+            }
+        }
+        >.tabla{
+            >article{
+                >header{}
+                >main{}
+                >footer{}
+            }
+        }
+    }
+    >aside{}
+    >footer{}
+}
+
