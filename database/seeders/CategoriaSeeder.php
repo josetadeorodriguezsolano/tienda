@@ -22,7 +22,7 @@ class CategoriaSeeder extends Seeder
     public function run()
     {
         Categoria::factory()
-            ->count(10)
+            ->count(100)
             ->create();
         /*for($i=0;$i<10;$i++)
         {

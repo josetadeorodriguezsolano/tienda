@@ -21,7 +21,7 @@ class ProductoFactory extends Factory
             "foto"=> "/img/galleta_animalitos.jpg",
             //'foto'=>$this->faker->imageUrl(40, 40, 'cats'),
             "especificaciones" => $this->faker->realText(200),
-            "categoria_id" => $this->faker->numberBetween(1,10)//$this->faker->numberBetween(1,10),
+            "categoria_id" => $this->faker->numberBetween(1,100)//$this->faker->numberBetween(1,10),
         ];
     }
 }
