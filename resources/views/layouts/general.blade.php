@@ -19,7 +19,7 @@
             @yield('menu',View::make('components.menu'))
         </nav>
         <main>
-            @yield('contenido'))
+            @yield('contenido')
         </main>
         <aside>
             @yield('carrito',View::make('components.carrito'))

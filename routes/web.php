@@ -80,4 +80,8 @@ Route::get('login',function (Request $request){
 Route::post('login/ingresar',[LoginController::class,'ingresar']);
 
 Route::get('cambiarEstilo',[LoginController::class,'cambiarEstilo']);
+
+Route::get('reporte/ventas',[PedidoController::class,'reporteVentas']);
+
+Route::get('reporte/usuarioConMayoresVentas/{nombre}',[PedidoController::class,'usuariosConMayoresVentas']);
 //require __DIR__.'/auth.php';

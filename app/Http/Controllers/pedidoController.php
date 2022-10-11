@@ -8,7 +8,7 @@ use App\Models\DetallePedido;
 use App\Models\Pedido;
 use Illuminate\Http\Request;
 
-class pedidoController extends Controller
+class PedidoController extends Controller
 {
     public function makePedido(Request $request)
     {
@@ -37,5 +37,17 @@ class pedidoController extends Controller
             }
         }
         return redirect('/');
+    }
+
+    public function reporteVentas(Request $request)
+    {
+        $ventasTotales = Pedido::ventasTotales();
+        return view("reporteVentas",["ventasTotales"=>$ventasTotales]);
+    }
+
+    public function usuariosConMayoresVentas($nombre)
+    {
+        $usuarios = Pedido::usuariosConMayoresVentas($nombre);
+        return view("reporteUsuariosConMayoresVentas",["usuarios"=>$usuarios]);
     }
 }
