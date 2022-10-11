@@ -34,12 +34,12 @@ class Pedido extends Model
         $usuarios_ids = DB::select(
         "SELECT users.id, SUM(detalle_pedidos.precio*detalle_pedidos.cantidad) as vendido
         FROM users
-        INNER JOIN Pedidos
+        INNER JOIN pedidos
         ON (users.id = pedidos.usuario_id)
         INNER JOIN detalle_pedidos
-        ON (Pedidos.id = detalle_pedidos.pedido_id)
+        ON (pedidos.id = detalle_pedidos.pedido_id)
         WHERE users.nombre like '%$nombre%'
-        and Pedidos.estatus = 'PAGADO'
+        and pedidos.estatus = 'PAGADO'
         GROUP BY users.id
         ORDER BY vendido DESC");
         $usuarios = new Collection();
