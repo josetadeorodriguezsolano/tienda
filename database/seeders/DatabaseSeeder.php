@@ -25,13 +25,12 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('1234'), // password
             'remember_token' => ""
         ]);*/
-        // \App\Models\User::factory(10)->create();
         $this->call([
-            /*UsersSeeder::class,
+            UsersSeeder::class,
             CategoriaSeeder::class,
-            ProductoSeeder::class,*/
+            ProductoSeeder::class,
             PedidoSeeder::class,
-            //DetallePedido::class,
+            DetallePedido::class,
         ]);
     }
 }

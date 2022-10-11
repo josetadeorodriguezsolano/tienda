@@ -21,7 +21,7 @@ class CategoriaSeeder extends Seeder
 
     public function run()
     {
-        Categoria::truncate();
+        //Categoria::truncate();
         Categoria::factory()
             ->count(100)
             ->create();
