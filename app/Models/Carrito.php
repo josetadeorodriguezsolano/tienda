@@ -13,7 +13,8 @@ class Carrito extends Model
     //usuario_id, producto_id, cantidad, precio, fecha
     public static function getCarrito($usuario)
     {
-        return Carrito::where('user_id',$usuario->id)->get();
+        return Carrito::conection("mysql2")->where('user_id',$usuario->id)->get();
+        //return Carrito::where('user_id',$usuario->id)->get();
     }
 
     public function producto()

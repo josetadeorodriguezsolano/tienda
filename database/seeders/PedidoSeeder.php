@@ -17,7 +17,7 @@ class PedidoSeeder extends Seeder
     public function run()
     {
         Pedido::factory()
-            ->count(5000000)
+            ->count(10000)
             ->create();
         $pedidos = Pedido::all();
         foreach($pedidos as $pedido)
