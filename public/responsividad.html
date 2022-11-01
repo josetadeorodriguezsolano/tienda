@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividad</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <style>
+        header{
+            background-color: blue;
+            height: 200px;
+        }
+        nav{
+            background-color: orange;
+        }
+        @media only screen and (max-width: 1200px) {
+            li{
+                list-style: none;
+                display: inline;
+                padding: 20px;
+            }
+        }
+        .icono_menu{
+            display: none;
+            width: 30px;
+        }
+        @media only screen and (max-width: 800px){
+            ul{
+                display: none;
+            }
+            .icono_menu{
+                display: block;
+            }
+        }
+        main{
+            background-color: red;
+            height: 600px;
+        }
+        aside{
+            background-color: green;
+            height: 300px;
+        }
+        footer{
+            background-color: violet;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header class="col-12">
+        <img src="/storage/img/icono_menu.png" class="icono_menu">
+    </header>
+    <section class="row">
+        <nav class="col-xl-1 col-md-12">
+            <ul>
+                <li>Opcion 1</li>
+                <li>Opcion 2</li>
+                <li>Opcion 3</li>
+            </ul>
+        </nav>
+        <main class="col-xl-10 col-md-8 col-sm-12">
+
+        </main>
+        <aside class="col-xl-1 col-md-4 col-sm-12">
+
+        </aside>
+    </section>
+    <footer class="row">
+
+    </footer>
+</body>
+</html>
