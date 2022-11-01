@@ -1,1 +1,1 @@
-nav{position:relative;width:2%;height:100%;border-radius:5%;transition:width 1s;background-color:bisque}nav>ul{position:relative;display:block;padding:20px;opacity:0;transition:opacity 1s}nav:hover{width:10%}nav:hover ul{opacity:1;transition:opacity 1s}
+button.carro{position:absolute;top:8px;right:16px}nav.carro{position:absolute;top:8px;right:16px}

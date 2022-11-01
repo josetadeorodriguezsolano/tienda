@@ -1,32 +1,16 @@
-nav{
+button.carro{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+
+}
+nav.carro{
     position: relative;
-    width: 2%;
-    height: 100%;
-    border-radius: 5%;
-    transition: width 1s;
-    background-color: bisque;
-
-    >ul{
-       // visibility: hidden;
-        position: relative;
-        display: block;
-        padding: 20px;
-        opacity: 0;
-        transition: opacity 1s;
-
-        >li{
-
-        }
-    }
+    top: 20px;
+    right: 16px;
 }
-nav:hover{
-    width: 10%;
 
-}
-nav:hover ul{
-    opacity: 1 ;
-    transition: opacity 1s;
-}
+
 
 
 
